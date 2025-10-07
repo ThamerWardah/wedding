@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-arabic-script {
+  font-family: var(--font-arabic-script), 'Traditional Arabic', 'Scheherazade New', serif;
+}
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Arabic text selection */
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8860B;
+}
